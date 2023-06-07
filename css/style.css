@@ -5,13 +5,13 @@
 }
 
 :root{
-    --background-color: #eee;
+    --background-color: #f4e4dc;
     --background-color-product: white;
     --font-color-white: white;
     --switch-color-black: rgb(0, 0, 0);
     --switch-color-blue: rgb(93, 167, 219);
     --switch-color-pink: rgb(243, 157, 247);
-    --switch-color-red: rgb(128, 0, 0);
+    --switch-color-red: rgb(201, 49, 99);
     --switch-color-pink-less-opacity: rgba(243, 157, 247,0.8);
     --switch-color-black-less-opacity: rgba(0, 0, 0, 0.8);
     --switch-color-blue-less-opacity: rgba(93, 167, 219, 0.8);
@@ -27,26 +27,262 @@ html{
 
 body{
     font-size: 2rem;
-    background:var(--background-color);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     gap: 2rem;
     font-family: 'Open Sans' , sans-serif;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.topbar-wrap{
+    width: 100%;
+    height: 36px;
+    font-size: 13px;
+    letter-spacing: .3px;
+    position: relative;
+    background-color: #f4e4dc;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    font-family: sans-serif;
+}
+.container-top{
+    width: 95%;
+}
+
+a {
+    transition: all .2s;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.right-column > .registreren{
+    font-style: italic;
+    font-size: 13px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+}
+
+.topbar-content > .name{
+    margin-right: -2px;
+    position: relative;
+    display: inline-block;
+    line-height: 42px;
+    list-style: none;
+}
+
+.topbar-content ul>li::before {
+    content: "";
+    display: inline-block;
+    height: 25px;
+    width: 1px;
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.naam-logo{
+    display: flex;
+    padding-left: 15px;
+    justify-content: center;
+}
+
+.main-header .naam-logo{
+    padding-right: 15px;
+}
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main-header .wrapp-header{
+    display: table;
+    width: 100%;
+}
+
+.wrapp-header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.widgetareahead{
+    padding-left: 0;
+    padding: 10px 15px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.main-header .widgetarea-head{
+    padding: 10px 15px;
+}
+
+.topbar-content{
+    display: table-cell;
+    vertical-align: top;
+    float: right;
+    width: 95%;
+}
+
+.menu-item{
+    font-size: 12px;
+}
+
+.menu{
+    list-style: none;
+    line-height: 1.3;
+    margin-left: -12px;
+}
+
+.menu-right-name{
+    float: right;
+    line-height: 42px;
+}
+
+.main-header{
+    background-color: #ffffff;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.scrolling-banner{
+    height: 3vh;
+    padding: 24px 0;
+    overflow: visible !important;
+    background: #ffffff;
+}
+
+.name{
+    display: flex;
+    float: left;
+    line-height: 4rem;
+    padding-left: 3rem;
+}
+
+.topbar > .container{
+    float: left;
+}
+
+.heading{
+    max-width: 100%;
+    display: flex;
+    overflow: hidden;
+    background-color: #f4e4dc;
+}
+
+.navigationwrap{
+    border-top: 1px solid rgba(168,168,168,.2);
+    border-bottom: 1px solid rgba(168,168,168,.2);
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.navigation-wrap > .container{
+    width: 95%;
+    height: 10vh;
+}
+
+.productnaam{
+    margin-right: 5px;
+    display: inline-block;
+    margin-left: -2px;
+    text-align: left;
+}
+
+.menu-item{
+    list-style: none;
+    float: right;
+    font: inherit;
+    font-size: 12px;
+
+}
+
+.header-infobalk:hover{
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 1.5s;
+}
+
+.header-infobalk{
+    color: #0060B6;
+    text-decoration: none;
+    color:#00A0C6; 
+    text-decoration:none; 
+    cursor:pointer;
+    font-style: inherit;
+    color: inherit;
+    padding: 14px;
+}
+
+.under{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding-top: 19rem;
+    padding-left: 6rem;
+}
+
+.slogan{
+    text-align: center;
+}
+
+.nav{
+    display: table;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.right-column{
+    float: right;
+    display: table-cell;
+    padding-top: 1rem;
+}
+
+.header-links{
+    float: right;
+    cursor: pointer;
+    list-style: none;
+}
+
+.right-column > .header-links > li > a{
+    font-style: italic;
+    font-size: 13px;
+    color: inherit;
+}
+
+.products-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.basel-navigation{
+    color: rgba(0,0,0,.7);
 }
 
 .modal{
     width: 80vw;
-    height: auto;
-    display: grid;
+    height: 50rem;
+    display: grid; 
     grid-template-columns: 50% 50%;
     position: relative;
+    display: none;
 }
 
 .modal__figure{
     width: 100%;
-    height: 100%;
+    height: 50rem;
     padding: 4rem;
     display: flex;
     justify-content: center;
@@ -88,7 +324,7 @@ body{
 }
 
 .modal__button{
-    position: relative;
+    position: absolute;
     top: 0;
     right: 0;
     text-transform: translate(50%, -50%);
@@ -99,8 +335,9 @@ body{
     font-size: 130%;
     font-weight: 500;
     background: var(--switch-color-pink);
-}
+    cursor: pointer;
 
+}
 
 .product{
     width: 39rem;
@@ -221,9 +458,302 @@ body{
     letter-spacing: 0.3rem;
 }
 
+.benefits-banner::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(97%);
+    content: "";
+    height: 100%;
+    min-height: 100%;
+    background-color: #f4e4dc;
+}
+
+.benefits-banner::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    transform: translateX(-97%);
+    height: 100%;
+    min-width: 100%;
+    background-color: #f4e4dc;
+}
+
+.benefits-banner{
+    background-color: #f4e4dc;
+    position: relative;
+    padding: 70px 10px;
+}
+
+.benefits-wrapper .lg--up--seven-eights{
+    text-align: center;
+}
+
+.uitleg{
+    width: 100%;
+    vertical-align: baseline;
+    margin: 0;
+    padding-top: 2rem;
+    border: 0;
+}
+
+.uitleg > .benefits-wrapper{
+    padding-bottom: 3rem;
+}
+
+.benefits-wrapper{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 4%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    max-width: 100%;
+    align-items: center;
+}
+
 .product__image{
     height: 100%;
     width: 100%;
     object-fit: contain;
     z-index: 1;
+}
+
+.modal__figure--black{
+    background: var(--switch-color-black-less-opacity);
+}
+
+.modal__figure--red{
+    background: var(--switch-color-red);
+}
+
+.modal__figure--blue{
+    background: var(--switch-color-blue);
+}
+
+.modal__heading--black{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 200%;
+    border-bottom: 0.5rem solid var(--switch-color-black);
+}
+
+.modal__heading--blue{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 200%;
+    border-bottom: 0.5rem solid var(--switch-color-blue);
+}
+
+.modal__heading--red{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 200%;
+    border-bottom: 0.5rem solid var(--switch-color-red);
+}
+
+.modal__button--red{
+    background-color: var(--switch-color-red);
+}
+
+.modal__button--black{
+    color: whitesmoke;
+    background: var(--switch-color-black);
+}
+
+.modal__button--blue{
+    cursor: pointer;
+    color: whitesmoke;
+    background: var(--switch-color-blue);
+}
+
+.under{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+}
+
+.button{
+    font-weight: 500;
+    padding: 11px 30px;
+    font-size: 2rem;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    background: #212121;
+    color: #ffffff;
+}
+  
+.button :hover:after {
+    position: absolute;
+    transition: 0.5s;
+  }
+  
+.button:hover span {
+    padding-right: 25px;
+  }
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.eerste--stap{
+    padding-top: 7rem;
+}
+
+.section{
+    background: black;
+    height: 100rem;
+}
+
+.section--first{
+    background: black;
+}
+
+.section--second{
+    background: darkblue;
+}
+
+.section--third{
+    background: white;
+    display: flex;
+    height: auto;
+    padding: 4rem;    
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 2rem;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.review{
+    width: 30rem;
+    min-height: 20rem;
+    background: darkred;
+    list-style: none;
+    padding: 4rem;
+    border-radius: 0.5rem;
+    background: white;
+    box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2),
+    inset 0 -1rem 1rem -1rem rgba(0,0,0,0.1);
+    position: relative;
+    animation-name: FadeIn;
+    animation-duration: 0.8s;
+    
+}
+
+.review:nth-of-type(4), .review:nth-of-type(5), .review:nth-of-type(6){
+    display: none;
+}
+
+.arrow{
+    width: 10%;
+    height: 100%;
+    background: white;
+    font-size: 300%;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow:hover{
+    cursor: pointer;
+}
+
+.quote{
+    font-size: 500%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 0.5;
+}
+
+.stars{
+    color: gold;
+}
+
+.review p{
+    font-size: 65%;
+    font-style: italic;
+    padding-bottom: 2rem;
+    border-bottom: 0.5rem solid rgba(0, 0, 0, 0.2);
+}
+
+.footer-container{
+    background-color: #f4e4dc;
+    width: 100%;
+    height: 15vh;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@keyframes FadeIn {
+    from{
+    opacity: 0;
+    filter: blur(10px);
+    }
+    to{
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+@media screen and (max-width: 62.5rem){ 
+    .modal{
+        grid-template-columns: 100%;
+    }
+
+    .products-container{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .modal__button{
+        display: none;
+    }
+     
+    .arrow{
+        display: none;
+    }
+
+    .reviews{
+        width: 100%;
+    }
+
+    .nav{
+       float: right;
+       display: block;
+    }
+
+    .topbar-wrap{
+        display: grid;
+        grid-template-columns: 100%;
+        height: 30vh;
+    }
+
+    .heading{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .under{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
 }
