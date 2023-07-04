@@ -25,7 +25,7 @@
             <div class="menu-right-name">
                 <ul class="menu">
                     <li class="menu-item">
-                        <a class="header-infobalk" href="filter.html" target="_self">
+                        <a class="header-infobalk" id="js--filterbutton" href="filter.html" target="_self">
                             productpagina #2
                         </a>
                         <a class="header-infobalk" href="mijn_account" target="_self">
@@ -66,7 +66,7 @@
     </section>
         
     <main class="content">
-        <heading class="heading">
+        <div class="heading">
             <section class="under">
                 <h1 class="slogan">Fly high</h1>
                 <button class="button">Shop Nu!</button>
@@ -74,13 +74,14 @@
             <figure class="figure--image">
                 <img class="heading--image heading--image--kite" src="/img/kitevlieger.webp" alt="Een kitevlieger">
             </figure>
-        </heading>
+        </div>
 
         <section class="products-container">
         <article id="js--pinkModal" class="modal">
             <figure class="modal__figure">
                 <img src="/img/kitevlieger.webp" alt="Een roze kitevlieger" class="modal__image" id="js--pink--kite">
                 <img src="img/kitevlieger_geel.webp" alt="Een gele kitevlieger" id="js--yellow--kite" class="modal__image">
+                <img src="/img/kitevliege_blauw_1.webp" alt="Een blauwe kitevlieger" id="js--blue--kite" class="modal__image">
             </figure>
             <section class="modal__section">
                 <h2 class="modal__heading">Kite vlieger</h2>
@@ -91,7 +92,10 @@
                 <h2 class="bonus">Zomerdeal</h2>
                 <s>€49,95</s>
                 <h2 class="prijs">€37</h2>
-                <button class="yellow--button" id="js--yellow--button">geel</button>
+                <section class="variants">
+                        <button class="yellow--button" id="js--yellow--button"></button>
+                        <button class="yellow--button switch-blue" id="js--blue--button"></button>
+                </section>
                 <a href="/index.html" class="modal__link">Terug naar producten</a>
                 <button data-product="Kitevlieger" class="product--button">in winkerwagen</button>
             </section>
@@ -242,7 +246,10 @@
                         &#9733;
                     </section>
                     <p>1. Goede vlieger, ik heb hem nu al voor 6 maanden en vlieger elk weekend ermee en nog geen problemen mee gekregen.</p>
-                    <h6>Bobby</h6>
+                    <section class="profielnaam">
+                        <h6>Bobby</h6>
+                        <img src="/img/profielfoto.webp" class="profielfoto" alt="Een onbekend profielfoto">
+                    </section>
                 </li>
                 <li class="review">
                     <figure class="quote">
@@ -254,7 +261,10 @@
                         &#9733;
                     </section>
                     <p>2. Het is een prima vlieger, helaas kan het wel slijten. Heb hem teruggebracht om hem te repareren. Nu doet het op z'n minst weer, maar wel jammer van de kwaliteit</p>
-                    <h6>Ben</h6>
+                    <section class="profielnaam">
+                        <h6>Ben</h6>
+                        <img src="/img/stick-figuur-ontwerp-stickman-trend-geschenkidee-poster.webp" class="profielfoto" alt="Een onbekend profielfoto">
+                    </section>
                 </li>
                 <li class="review">
                     <figure class="quote">
@@ -268,7 +278,10 @@
                         &#9733;
                     </section>
                     <p>3. Mooie vliegers, je kan ze zelf ook nog volledig customizen</p>
-                    <h6>Bob</h6>
+                    <section class="profielnaam">
+                        <h6>Bob</h6>
+                        <img src="/img/profielfoto.webp" class="profielfoto" alt="Een onbekend profielfoto">
+                    </section>
                 </li>
                 <li class="review">
                     <figure class="quote">
@@ -281,7 +294,10 @@
                         &#9733;
                     </section>
                     <p>4. Fijne vlieger, kan het makkelijk gebruiken en een sterk touw, vergeleken met andere vliegers.</p>
-                    <h6>Halle</h6>
+                    <section class="profielnaam">
+                        <h6>Halle</h6>
+                        <img src="/img/profielfoto.webp" class="profielfoto" alt="Een onbekend profielfoto">
+                    </section>
                 </li>
                 <li class="review">
                     <figure class="quote">
@@ -290,10 +306,13 @@
                     <section class="stars">
                         &#9733;
                         &#9733;
-
+                        &#9733;
                     </section>
                     <p>5. Vlieger scheurde helaas, heb het terruggestuurd en een nieuwe gekregen</p>
-                    <h6>Kile</h6>
+                    <section class="profielnaam">
+                        <h6>Rob</h6>
+                        <img src="/img/profielfoto.webp" class="profielfoto" alt="Een onbekend profielfoto">
+                    </section>
                 </li>
                 <li class="review">
                     <figure class="quote">
@@ -304,8 +323,11 @@
                         &#9733;
                         &#9733;
                     </section>
-                    <p>6. Niet slecht voor de prijs</p>
-                    <h6>Indy</h6>
+                    <p>6. Niet slecht voor de prijs, maar kon wel een stukje beter</p>
+                    <section class="profielnaam">
+                        <h6>Kile</h6>
+                        <img src="/img/stick-figuur-ontwerp-stickman-trend-geschenkidee-poster.webp" class="profielfoto" alt="Een onbekend profielfoto">
+                    </section>
                 </li>
             </ul> 
             <button class="arrow">></button>

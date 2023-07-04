@@ -163,18 +163,24 @@ checkoutButton.onclick = function(){
 
 const yellowkite = document.getElementById("js--yellow--kite");
 const yellowbutton = document.getElementById("js--yellow--button");
+const pinkbutton = document.getElementById("js--pink--button")
 const pinkkite = document.getElementById("js--pink--kite");
+const bluebutton = document.getElementById("js--blue--button");
+const bluekite = document.getElementById("js--blue--kite");
 const productvliegers = document.getElementsByClassName("product__image")
 let yellowkiteIsopen = false;
+let pinkkiteIsOpen = false;
+let bluekiteIsopen = false;
 
-yellowbutton.onclick = function(){
-    if(yellowkiteIsopen === true){
-        for(let i = 0; i < productvliegers.length; i++){
-            document.getElementById("js--pink--kite").style.display = "none";
-            document.getElementById("js--yellow--kite").style.display = "block";
-        }
+bluebutton.onclick = function(){
+    {
+    pinkkite.setAttribute('display','none');
+    bluekite.getAttribute("src", '/img/kitevliege_blauw_1.webp');
+
+    document.getElementById("js--blue--kite").style.display = "block"
+    document.getElementById("js--pink--kite").style.display = "none"
+    document.getElementById("js--yellow--kite").style.display = "none"
     }
-    return
 }
 
 vliegerGeel.onclick = function(){
@@ -184,6 +190,7 @@ vliegerGeel.onclick = function(){
 
         document.getElementById("js--yellow--kite").style.display = "block"
         document.getElementById("js--pink--kite").style.display = "none"
+        document.getElementById("js--blue--kite").style.display = "none"
     }
 }
 
@@ -211,68 +218,3 @@ vlindergeel.onclick = function(){
     document.getElementById("js--gele--vlinder").style.display = "block";
 }
 
-
-let allVliegers = document.getElementsByClassName("product--image--collectie");
-let filters = document.getElementsByClassName("filter");
-
-for(let i = 0; i < filters.length; i++){
-    filters[i].checked = true
-}
-
-//Kitevlieger filter
-let kitevliegerfilter = document.getElementsByClassName("filter");
-
-kitevliegerfilter[0].onchange = function(){ 
-    if(kitevliegerfilter[0].checked === true)
-    for(let i = 0; i < allVliegers.length; i++){
-        if(allVliegers[i].dataset.category === "onder_de_15"){
-            allVliegers[i].style.display = "block";
-        }
-    }       
-    else{
-        for(let i = 0; i < allVliegers.length; i++){
-                if(allVliegers[i].dataset.category === "onder_de_15"){
-                    allVliegers[i].style.display = "none";
-                }
-        }    
-    }
-}
-
-console.log(kitevliegerfilter);
-
-//eenlijnsvlieger filter
-let Eenlijnsvliegers = document.getElementsByClassName("filter")
-
-Eenlijnsvliegers[1].onchange = function(){ 
-    if(Eenlijnsvliegers[1].checked === true)
-    for(let i = 0; i < allVliegers.length; i++){
-        if(allVliegers[i].dataset.category === "tussen 35_en_50"){
-            allVliegers[i].style.display = "block";
-        }
-    }       
-    else{
-        for(let i = 0; i < allVliegers.length; i++){
-                if(allVliegers[i].dataset.category === "tussen 35_en_50"){
-                    allVliegers[i].style.display = "none";
-                }
-        }    
-    }
-}
-
-let Deltavliegers = document.getElementsByClassName("filter")
-
-Deltavliegers[2].onchange = function(){ 
-    if(Deltavliegers[2].checked === true)
-    for(let i = 0; i < allVliegers.length; i++){
-        if(allVliegers[i].dataset.category === "boven_de_300"){
-            allVliegers[i].style.display = "block";
-        }
-    }       
-    else{
-        for(let i = 0; i < allVliegers.length; i++){
-                if(allVliegers[i].dataset.category === "boven_de_300"){
-                    allVliegers[i].style.display = "none";
-                }
-        }    
-    }
-}
