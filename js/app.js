@@ -217,4 +217,3 @@ vlindergeel.onclick = function(){
     document.getElementById("js--blauwe--vlinder").style.display = "none";
     document.getElementById("js--gele--vlinder").style.display = "block";
 }
-
