@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">        
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/app.js" defer></script>
+    <script src="/js/icons.js"></script>
+    <title>modal</title>
+</head>
+
+
+<body>
+    <nav class="topbar-wrap">
+        <div class="topbar-content">
+            <div class="name"> GRATIS VERZENDING VANAF 80€</div>
+            <div class="menu-right-name">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a class="header-infobalk" id="js--filterbutton" href="filter.html" target="_self">
+                            productpagina #2
+                        </a>
+                        <a class="header-infobalk" href="mijn_account" target="_self">
+                            MIJN ACCOUNT
+                        </a>
+                        <a href="blog" class="header-infobalk" target="_self">
+                            OVER ONS
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="wrapp-header">
+                <div class="site-logo"></div>
+                <div class="right-column"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="nav">
+        <div class="widgetareahead"></div>
+        <div class="container">
+            <div class="naam-logo">
+                <h1>Vliegerwolkje</h1>
+            </div>
+        </div>    
+            <br>
+            
+            <div class="navigationwrap">
+                <div class="container">
+                        <ul id="menu-main-navigation" class="menu">
+                            <li class="productnaam">Proffesionele vliegers</li>
+                            <li class="productnaam">Thema/feestvliegers</li>
+                        </ul>
+                </div>
+            </div>  
+    </section>
+        
+    <main class="content">
+        <div class="heading">
+            <section class="under">
+                <h1 class="slogan">Fly high</h1>
+                <button class="button">Shop Nu!</button>
+            </section>
+            <figure class="figure--image">
+                <img class="heading--image heading--image--kite" src="/img/kitevlieger.webp" alt="Een kitevlieger">
+            </figure>
+        </div>
+
+        <section class="products-container">
+        <article id="js--pinkModal" class="modal">
+            <figure class="modal__figure">
+                <img src="/img/kitevlieger.webp" alt="Een roze kitevlieger" class="modal__image" id="js--pink--kite">
+                <img src="img/kitevlieger_geel.webp" alt="Een gele kitevlieger" id="js--yellow--kite" class="modal__image">
+                <img src="/img/kitevliege_blauw_1.webp" alt="Een blauwe kitevlieger" id="js--blue--kite" class="modal__image">
+            </figure>
+            <section class="modal__section">
+                <h2 class="modal__heading">Kite vlieger</h2>
+                <p class="modal__text">
+                    Je komt hier alles tegen voor als je begint met surven, paragliden, of om
+                    lekker op het strand te laten vliegen. Het is ook binnenkort beschikbaar met een motor.
+                </p>
+                <h2 class="bonus">Zomerdeal</h2>
+                <s>€49,95</s>
+                <h2 class="prijs">€37</h2>
+                <section class="variants">
+                        <button class="yellow--button" id="js--yellow--button"></button>
+                        <button class="yellow--button switch-blue" id="js--blue--button"></button>
+                </section>
+                <a href="/index.html" class="modal__link">Terug naar producten</a>
+                <button data-product="Kitevlieger" class="product--button">in winkerwagen</button>
+            </section>
+            <button id="js--closePink" class="modal__button">X</button>
+        </article>
+
+        <article id="js--pink" class="product product--vlieger">
+            <figure class="product__figure product__figure--pink">
+                <img src="img/kitevlieger.webp" alt="een roze matrasvlieger" class="product__image">
+            </figure>
+            <section class="product__section product__section--vlieger">
+                <button class="product__button">bekijk product</button>
+            </section>
+        </article>
+
+        <article id="js--blackModal" class="modal">
+            <figure class="modal__figure modal__figure--black">
+                <img src="img/vleermuis.webp" alt="Een vleermuisvlieger" class="modal__image">
+            </figure>
+            <section class="modal__section">
+                <h2 id="js--blackmodal" class="modal__heading modal__heading--black">vleermuis vlieger</h2>
+                <p class="modal__text">
+                    Hier kan je alles zien voor voor feestvliegers, zoals voor Halloween
+                </p>
+                <h2 class="bonus">Zomerdeal</h2>
+                <s>€22</s>
+                <h2 class="prijs">€14</h2>
+                <a href="/index.html" class="modal__link">Terug naar producten</a>
+                <button data-product="Vleermuis" class="product--button">in winkerwagen</button>
+            </section>
+            <button id="js--closeBlack" class="modal__button modal__button--black">X</button>
+        </article>
+            
+        <article id="js--black" class="product product--black">
+            <figure class="product__figure product__figure--black">
+                <img src="img/vleermuis.webp" alt="een vleermuis vlieger" class="product__image" >
+            </figure>
+            <section class="product__section product__section--zwart">
+                <button class="product__button">bekijk product</button>
+            </section>
+        </article>
+
+        <article id="js--blueModal" class="modal">
+            <figure class="modal__figure modal__figure--blue">
+                <img src="/img/blauwe_vlinder.webp" alt="een blauwe vlinder vlieger" class="modal__image" id="js--blauwe--vlinder">
+                <img src="/img/paarse_vlindervlieger.webp" alt="een paarse vlinder vlieger" class="modal__image" id="js--paarse--vlinder">
+                <img src="/img/vlinder_vlieger-geel.webp" alt="een gele vlindervlieger" class="modal__image" id="js--gele--vlinder">
+            </figure>
+            <section class="modal__section">
+                <h2 class="modal__heading modal__heading--blue">vlinder vlieger</h2>
+                <p class="modal__text">
+                    Je komt hier alles tegen voor je perfecte vlieger voor de zomer, omdat het een mooie gloed afgeeft als het zonnetje schijnt.
+                </p>
+                <h2 class="prijs">€18</h2>
+                <section class="variants">
+                    <button class="yellow--button change--purple" id="js--purple--button"></button>
+                    <button class="yellow--button" id="js--yellowvlinder--button"></button>
+                </section>
+                <a href="/index.html" class="modal__link">Terug naar producten</a>
+                <button data-product="blauwe_vlinder" class="product--button">in winkerwagen</button>
+            </section>
+            <button id="js--closeBlue" class="modal__button modal__button--blue">X</button>
+        </article>
+
+        <article id="js--blue" class="product product--blue">
+            <figure class="product__figure product__figure--blue">
+                <img src="img/blauwe_vlinder.webp" alt="een vlieger van een blauwe vlinder" class="product__image">
+            </figure>
+            <section class="product__section product__section--blue">
+                <button class="product__button">bekijk product</button>
+            </section>
+        </article> 
+
+
+        <article id="js--redModal" class="modal">
+            <figure class="modal__figure modal__figure--red">
+                <img src="img/deltavlieger.webp" alt="Een deltavlieger" class="modal__image">
+            </figure>
+            <section class="modal__section">
+                <h2 class="modal__heading--red">deltavlieger</h2>
+                    <p class="modal__text">Hier kom je deltavliegers tegen die ideaal zijn 
+                        voor uren vliegplezier in de lucht
+                    </p>
+                    <s>€739</s>
+                    <h2 class="prijs">€335</h2>
+                <a href="/index.html" class="modal__link">Terug naar producten</a>
+                <button data-product="Deltavlieger" class="product--button">in winkerwagen</button>
+            </section>
+            <button id="js--closeRed" class="modal__button modal__button--red">X</button>
+        </article>
+
+        <article id="js--red" class="product product--red">
+            <figure class="product__figure product__figure--red">
+                <img src="img/deltavlieger.webp" alt="Een deltavlieger" class="product__image" >
+            </figure>
+            <section class="product__section product__section--red">
+                <button class="product__button">bekijk product</button>
+            </section>
+        </article>
+        </section>
+
+        <div class="uitleg">
+            <section class="benefits-banner">
+                <ul class="benefits-wrapper lg--up--seven-eights">
+                    <li>Top vliegers</li>
+                    <li><img class="wrapper--image" src="/img/vlieger.webp" alt="Een roze ruitjesvlieger"></li>
+                    <li>Eerlijke prijzen</li>
+                    <li>Hoge kwaliteit</li>
+                    <li>test</li>
+                </ul>
+            </section>
+        </div>
+        
+        <article class="heading-2">
+            <figure class="figure--image">
+                <img class="heading--image" src="/img/flamingo_vlieger.webp" alt="Een roze flamingo vlieger">
+            </figure>
+            <section class="modal__section">
+                <h2>Bekijk hier de  preview van de gloednieuwe collectie vliegers</h2>
+                <button class="product--button not">Pre Order binnenkort beschikbaar</button>
+            </section>
+        </article>
+
+            <article class="alle_stappen">
+                <h2 class="title">Hier komen de stappen over hoe je je eigen design kan opsturen</h2>
+                <section class="stappenplan">
+                    <article class="stappen"><h4>De eerste stap is dat je een template kiest en download onderin de pagina</h4></article>
+                    <article class="stappen"><h4>De tweede stap is om je eigen print/stijl erin te zetten</h4></article>
+                </section>
+                <section class="stappenplan__under">
+                    <article class="stappen"><h4>De derde stap is het naar ons op te sturen via vliegerwolkjedesign@hotmail.com</h4></article>
+                    <article class="stappen"><h4>Wij sturen een e-mail met een bevestiging dat uw bestelling bij on binnen is gekomen, en sturen een verwachtte leveringsdatum</h4></article>
+                </section>
+            </article>
+            
+        <h2 class="review-tekst">Kijk wat klanten ervan vinden</h2>
+        <section class="section section--third">
+            <button class="arrow">&lt</button>
+            <ul class="reviews">
+                <li class="review">
+                    <figure class="quote">
+                        &#10077;
+                    </figure>
+                    <section class="stars">
+                        &#9733;
+                        &#9733;
+                        &#9733;
+                        &#9733;
+                    </section>
+                    <p>1. Goede vlieger, ik heb hem nu al voor 6 maanden en vlieger elk weekend ermee en nog geen problemen mee gekregen.</p>
+                    <section class="profielnaam">
+                        <h6>Bobby</h6>
+                        <img src="/img/profielfoto.webp" class="profielfoto" alt="Een onbekend profielfoto">
+                    </section>
+                </li>
+                <li class="review">
+                    <figure class="quote">
+                        &#10077;
+                    </figure>
+                    <section class="stars">
+                        &#9733;
+                        &#9733;
+                        &#9733;
+                    </section>
+                    <p>2. Het is een prima vlieger, helaas kan het wel slijten. Heb hem teruggebracht om hem te repareren. Nu doet het op z'n minst weer, maar wel jammer van de kwaliteit</p>
+                    <section class="profielnaam">
+                        <h6>Ben</h6>
+                        <img src="/img/stick-figuur-ontwerp-stickman-trend-geschenkidee-poster.webp" class="profielfoto" alt="Een onbekend profielfoto">
+                    </section>
+                </li>
+                <li class="review">
+                    <figure class="quote">
+                        &#10077;
+                    </figure>
+                    <section class="stars">
+                        &#9733;
+                        &#9733;
+                        &#9733;
+                        &#9733;
+                        &#9733;
+                    </section>
+                    <p>3. Mooie vliegers, je kan ze zelf ook nog volledig customizen</p>
+                    <section class="profielnaam">
+                        <h6>Bob</h6>
+                        <img src="/img/profielfoto.webp" class="profielfoto" alt="Een onbekend profielfoto">
+                    </section>
+                </li>
+                <li class="review">
+                    <figure class="quote">
+                        &#10077;
+                    </figure>
+                    <section class="stars">
+                        &#9733;
+                        &#9733;
+                        &#9733;
+                        &#9733;
+                    </section>
+                    <p>4. Fijne vlieger, kan het makkelijk gebruiken en een sterk touw, vergeleken met andere vliegers.</p>
+                    <section class="profielnaam">
+                        <h6>Halle</h6>
+                        <img src="/img/profielfoto.webp" class="profielfoto" alt="Een onbekend profielfoto">
+                    </section>
+                </li>
+                <li class="review">
+                    <figure class="quote">
+                        &#10077;
+                    </figure>
+                    <section class="stars">
+                        &#9733;
+                        &#9733;
+                        &#9733;
+                    </section>
+                    <p>5. Vlieger scheurde helaas, heb het terruggestuurd en een nieuwe gekregen</p>
+                    <section class="profielnaam">
+                        <h6>Rob</h6>
+                        <img src="/img/profielfoto.webp" class="profielfoto" alt="Een onbekend profielfoto">
+                    </section>
+                </li>
+                <li class="review">
+                    <figure class="quote">
+                        &#10077;
+                    </figure>
+                    <section class="stars">
+                        &#9733;
+                        &#9733;
+                        &#9733;
+                    </section>
+                    <p>6. Niet slecht voor de prijs, maar kon wel een stukje beter</p>
+                    <section class="profielnaam">
+                        <h6>Kile</h6>
+                        <img src="/img/stick-figuur-ontwerp-stickman-trend-geschenkidee-poster.webp" class="profielfoto" alt="Een onbekend profielfoto">
+                    </section>
+                </li>
+            </ul> 
+            <button class="arrow">></button>
+        </section>
+    </main>
+
+    <button class="shoppingCart" id="js--checkoutButton">
+        <i class="fa-solid fa-cart-shopping" id="js--cartbutton"></i>
+        <i class="fa-solid fa-arrow-left" id="js--returnbutton"></i>
+        <p class="shoppingCart__message">0</p>
+    </button>
+    
+    <section id="js--checkoutWindow" class="checkout a-popup">
+        <ul class="checkout__list">
+            <li class="checkout__ListItem">
+                <img src="/img/kitevlieger.webp" alt="Een roze kitevlieger" class="checkout__image">
+                <p class="checkout__title">Kitevlieger</p>
+                <p id="js--amount-kitevlieger" class="checkout__amount"></p>
+                <p id="js--price-kitevlieger" class="total__price"></p>
+            </li>
+            <li class="checkout__listItem">
+            <img src="/img/vleermuis.webp" alt="Een vleermuis vlieger" class="checkout__image">
+                <p class="checkout__title">vleermuis vlieger</p>
+                <p id="js--amount-vleermuis" class="checkout__amount"></p>
+                <p id="js--price-vleermuis" class="total__price"></p>
+            </li>
+            <li class="checkout__listItem">
+                <img src="/img/blauwe_vlinder.webp" alt="Een vleermuis vlieger" class="checkout__image">
+                <p class="checkout__title">blauwe vlinder vlieger</p>
+                <p id="js--amount-vlinder" class="checkout__amount"></p>
+                <p id="js--price-vlinder" class="total__price"></p>
+            </li>
+            <li class="checkout__listItem">
+                <img src="/img/deltavlieger.webp" alt="Een vleermuis vlieger" class="checkout__image">
+                <p class="checkout__title">deltavlieger</p>
+                <p id="js--amount-delta" class="checkout__amount"></p>
+                <p id="js--price-delta" class="total__price"></p>
+            </li>
+            <li class="checkout__listItem">
+                <p class="checkout__title">Total Price</p>
+                <p id="js--total__price" class="total__price"></p>
+            </li>
+        </ul>
+    </section>
+    <footer class="footer-container color-scheme-dark"><p>gemaakt door Ben</p>
+    </footer>
+</body>
+</html>
