@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">        
     <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/filter.js" defer></script>
+    <script src="/js/producten.js" defer></script>
     <script src="/js/icons.js"></script>
     <title>modal</title>
 </head>
@@ -28,8 +28,8 @@
                             <a class="header-infobalk" href="index.html" target="_self">
                                 main pagina
                             </a>
-                            <a class="header-infobalk" id="js--filterbutton" href="filter2.html" target="_self">
-                                productpagina #2
+                            <a class="header-infobalk" id="js--filterbutton" href="filter.html" target="_self">
+                                productpagina #1
                             </a>
                             <a class="header-infobalk" href="mijn_account" target="_self">
                                 MIJN ACCOUNT
@@ -70,35 +70,28 @@
             </section> 
             
             <section class="inputs">
-                <div>
-                    <input id="checkbox-ItTakesTwo" type="checkbox" class="filter">
-                    <label for="checkbox-ItTakesTwo" class="label">onder de €15</label>
-                </div>
-                
-                <div>
-                    <input id="checkbox-Deltavliegers" type="checkbox" class="filter">
-                    <label for="checkbox-Deltavliegers" class="label">tussen €35 en €50</label>
-                </div>
-                <div>
-                    <input id="checkbox-Crash" type="checkbox" class="filter">
-                    <label for="checkbox-Crash" class="label">boven de €300</label>
-                </div>
+                <select name="price" id="sortSelect">
+                    <option value="Default">Default</option>
+                    <option value="LowToHigh">van €15 naar €35</option>
+                    <option value="HighToLow">van €36 naar €55</option>
+                    <option value="high">van €850 naar €1600</option>
+                </select>
             </section>
 
             
             <ul class="vliegers">
-                <li class="vlieger" data-category="onder_de_15"><img src="/img/grote_vlieger.webp"  alt="Een fantasie dierenvlieger"></li>
-                <li class="vlieger" data-category="tussen_35_en_50"><img src="/img/kitevliege_blauw_1.webp"></li>
-                <li class="vlieger" data-category="onder_de_15"><img src="img/deltavlieger_draak.webp" alt="Een gloeiende drakenvlieger"></li>
-                <li class="vlieger" data-category="onder_de_15"><img src="/img/vuur_vlieger.png" alt="Een vuur vlieger"></li>
-                <li class="vlieger" data-category="tussen_35_en_50"><img src="/img/phantom.webp" alt="Een groene Kitevlieger"></li>
-                <li class="vlieger" data-category="tussen_35_en_50"><img src="img/kitevlieger_kleur.webp" alt="Een gele kitevlieger"></li>
-                <li class="vlieger" data-category="boven_de_300"><img src="/img/deltavlieger.webp" alt="Een Groene deltavlieger"></li>
-                <li class="vlieger" data-category="boven_de_300"><img src="/img/maasvlakte-soaren.webp" alt="Een rood/witte deltavlieger"></li>
-                <li class="vlieger" data-category="tussen_35_en_50"><img src="/img/phantom.webp" alt="Een groene Kitevlieger"></li>
-                <li class="vlieger" data-category="tussen_35_en_50"><img src="img/kitevlieger_kleur.webp" alt="Een gele kitevlieger"></li>
-                <li class="vlieger" data-category="boven_de_300"><img src="/img/deltavlieger.webp" alt="Een Groene deltavlieger"></li>
-                <li class="vlieger" data-category="boven_de_300"><img src="/img/maasvlakte-soaren.webp" alt="Een rood/witte deltavlieger"></li>
+                <li class="vlieger" data-price="800"><img src="/img/rode_kite.webp"  alt="Een rode kitevlieger"></li>
+                <li class="vlieger" data-price="49,95"><img src="/img/kitevliege_blauw_1.webp" alt="een blauwe kittevlieger"></li>
+                <li class="vlieger" data-price="14,99"><img src="img/deltavlieger_draak.webp" alt="Een gloeiende drakenvlieger"></li>
+                <li class="vlieger" data-price="12,99"><img src="/img/vuur_vlieger.png" alt="Een vuur vlieger"></li>
+                <li class="vlieger" data-price="37,95"><img src="/img/phantom.webp" alt="Een groene Kitevlieger"></li>
+                <li class="vlieger" data-price="43,50"><img src="img/kitevlieger_kleur.webp" alt="Een gele kitevlieger"></li>
+                <li class="vlieger" data-price="1345"><img src="/img/deltavlieger.webp" alt="Een Groene deltavlieger"></li>
+                <li class="vlieger" data-price="600"><img src="/img/maasvlakte-soaren.webp" alt="Een rood/witte deltavlieger"></li>
+                <li class="vlieger" data-price="37,50"><img src="/img/phantom.webp" alt="Een groene Kitevlieger"></li>
+                <li class="vlieger" data-price="43,50"><img src="img/kitevlieger_kleur.webp" alt="Een gele kitevlieger"></li>
+                <li class="vlieger" data-price="1345"><img src="/img/deltavlieger.webp" alt="Een Groene deltavlieger"></li>
+                <li class="vlieger" data-price="1100"><img src="/img/kitevlieger_staand.webp" alt="Een rood/witte deltavlieger"></li>
 
             </ul>
         </main>
